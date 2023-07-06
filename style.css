@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+}
+
+.username h3 {
+  margin-right: 5px;
+}
+
+.verified-badge {
+  width: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.post-actions {
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comments ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.add-comment {
+  margin-top: 10px;
+  display: flex;
+}
+
+.add-comment input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.add-comment button.post-comment-btn {
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+  header {
+    padding: 5px;
+  }
+  main {
+    padding: 10px;
+  }
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .username h3 {
+    font-size: 14px;
+  }
+  .verified-badge {
+    width: 10px;
+  }
+  .post-actions button {
+    padding: 3px 8px;
+    margin-right: 5px;
+  }
+  .likes {
+    font-size: 12px;
+  }
+  .comments ul {
+    font-size: 12px;
+  }
+  .add-comment input[type="text"] {
+    font-size: 12px;
+  }
+  .add-comment button.post-comment-btn {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width:1200px) {
+  header {
+    padding: 10px;
+  }
+  main {
+    padding: 20px;
+  }
+  .post-actions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1201px) {
+  header {
+    padding: 20px;
+  }
+  main {
+    padding: 30px;
+  }
+
+}
