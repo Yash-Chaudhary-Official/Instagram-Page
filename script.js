@@ -2,7 +2,7 @@
 
 setTimeout(function () {
     document.querySelector(".welcomee").classList.add("welcome");
-},2000)
+},1000)
 var a=document.querySelectorAll(".like-btn")
 var b=document.querySelectorAll(".likes")
 //0-n-1
